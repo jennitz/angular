@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: darkolivegreen;
+  color: orangered;
+  font-family: courier;
+}
+
+h1 {
+  font-family: inherit;
+  background-color: papayawhip;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+.bigdiv {
+  font-family: inherit;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: papayawhip;
+  color: black;
+  border: 5px solid black;
+  width: 40%;
+  min-height: 420px;
+  overflow: auto;
+}
+
+.meddiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+  width: 100%;
+  overflow: auto;
+}
+
+.lildiv {
+  text-align: left;
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+  width: 65%;
+  overflow: auto;
+}
+
+input {
+  font-family: inherit;
+  height: 25px;
+  font-size: 14px;
+  border: 2px solid black;
+  text-align: left;
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+button {
+  font-family: inherit;
+  font-weight: bold;
+  height: 30px;
+  font-size: 14px;
+  border: 2px solid black;
+  background-color: lightgray;
+  margin: 0 auto;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+
+.add, .search {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+#x {
+  float: right;
+  cursor: pointer;
+  color: orangered;
+  font-weight: bold;
+  font-size: larger;
+}
