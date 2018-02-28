@@ -51,10 +51,9 @@ h1 {
 
 input {
   font-family: inherit;
-  height: 25px;
-  font-size: 14px;
+  height: 30px;
+  font-size: 80%;
   border: 2px solid black;
-  text-align: left;
 }
 
 input::placeholder {
@@ -70,7 +69,6 @@ button {
   background-color: lightgray;
   margin: 0 auto;
   padding: 2px 4px;
-  cursor: pointer;
 }
 
 .add, .search {
@@ -79,12 +77,15 @@ button {
   text-align: center;
 }
 
-
-
 #x {
   float: right;
-  cursor: pointer;
   color: orangered;
   font-weight: bold;
   font-size: larger;
+  padding: 2px;
+}
+
+button:hover, #x:hover {
+  cursor: pointer;
+  transform: scale(1.5) perspective(1px);
 }
