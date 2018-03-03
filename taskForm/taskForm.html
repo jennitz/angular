@@ -1,0 +1,11 @@
+<input class='add' type='text' ng-model='$ctrl.newItem' ng-keyup='$event.keyCode == 13 && $ctrl.addItem()' placeholder='Add New To-Do Item Here' size='24' />
+<button class='add' ng-click='$ctrl.addItem()'>Add</button>
+<strong> || </strong>
+<input class='search' type='text' ng-model='$ctrl.search' placeholder='Search For Item Here' size='21' />
+<br />
+<br />
+<div class='meddiv'>
+  <div class='lildiv'>
+    <task-list items="$ctrl.items" search="$ctrl.search"></task-list>
+  </div>
+</div>

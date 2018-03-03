@@ -1,0 +1,4 @@
+<h3 ng-repeat='item in $ctrl.items | filter: $ctrl.search'>
+  <span>{{item}}</span>
+  <span id='x' ng-click='$ctrl.remove(item)'>X</span>
+</h3>

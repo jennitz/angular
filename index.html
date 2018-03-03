@@ -8,29 +8,19 @@
   <link href='index.css' rel='stylesheet' type='text/css' />
 </head>
 
-<body ng-controller='FormController as list'>
+<body>
   <h1>To-Do List:</h1>
   <br />
   <br />
   <div class='bigdiv'>
-    <input class='add' type='text' ng-model='list.newItem' ng-keyup='$event.keyCode == 13 && list.addItem()' placeholder='Add New To-Do Item Here' size='24' />
-    <button class='add' ng-click='list.addItem()'>Add</button>
-    <strong> || </strong>
-    <input class='search' type='text' ng-model='list.search' placeholder='Search For Item Here' size='21' />
-    <br />
-    <br />
-    <div class='meddiv'>
-      <div class='lildiv'>
-        <h3 ng-repeat='item in list.item | filter: list.search'>
-          <span>{{item}}</span>
-          <span>{{newItem}}</span>
-          <span id='x' ng-click='list.remove(item)'>X</span>
-        </h3>
-      </div>
-    </div>
+    <task-form></task-form>
   </div>
 
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'></script>
   <script src='ctrl.js'></script>
+  <script src='taskForm/taskForm.js'></script>
+  <script src='taskForm/taskForm-controller.js'></script>
+  <script src='taskList/taskList.js'></script>
+  <script src='taskList/taskList-controller.js'></script>
 </body>
 </html>
