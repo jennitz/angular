@@ -9,18 +9,22 @@
 </head>
 
 <body>
-  <h1>To-Do List:</h1>
+  <h1 id='title'>To-Do List:</h1>
   <br />
   <br />
-  <div class='bigdiv'>
-    <task-form></task-form>
+  <div class='viewdiv'>
+    <ng-view></ng-view>
   </div>
 
   <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js'></script>
+  <script src='//ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js'></script>
   <script src='ctrl.js'></script>
   <script src='taskForm/taskForm.js'></script>
   <script src='taskForm/taskForm-controller.js'></script>
   <script src='taskList/taskList.js'></script>
   <script src='taskList/taskList-controller.js'></script>
+  <script src='factories/data-factory.js'></script>
+  <script src='welcome/welcome.js'></script>
+  <script src='welcome/welcome-controller.js'></script>
 </body>
 </html>

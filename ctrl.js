@@ -1,5 +1,15 @@
 (function(){
-  angular.module('app', []);
+  angular.module('app', ['ngRoute'])
+    .config(function($routeProvider){
+      $routeProvider
+        .when('/', {
+          template: '<welcome></welcome>'
+        })
+        .when('/app', {
+          template: '<task-form></task-form>'
+        })
+
+    });
 
 
 

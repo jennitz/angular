@@ -1,4 +1,4 @@
-body {
+body{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,15 +8,31 @@ body {
   font-family: courier;
 }
 
-h1 {
+#title {
   font-family: inherit;
   background-color: papayawhip;
+  color: orangered;
   margin: 0 auto;
   padding: 20px;
   border: 5px solid black;
 }
 
-.bigdiv {
+#welcome {
+  font-family: inherit;
+  background-color: orangered;
+  color: white;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid black;
+  height: 300px;
+}
+
+p {
+  font-family: inherit;
+  color: black;
+}
+
+.viewdiv {
   font-family: inherit;
   text-align: center;
   margin: 0 auto;
@@ -83,6 +99,12 @@ button {
   font-weight: bold;
   font-size: larger;
   padding: 2px;
+}
+
+a {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 button:hover, #x:hover {
